@@ -9,9 +9,10 @@ const Movies= ({type,setGenre}) => {
  const Navigate = useNavigate();
   useEffect(() => {
     const getRandomMovie = async () => {
+ 
       try {
         const res = await axios.get(
-          `http://localhost:4000/api/movie/random?type=${type}`
+          `http://localhost:5000/api/movie/random?type=${type}`
         );
         //console.log(res);
         setContent(res.data[0]);

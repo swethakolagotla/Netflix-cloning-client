@@ -11,7 +11,7 @@ const Watch = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:4000/api/movie/singlefind/${_id}`)
+      .get(`http://localhost:5000/api/movie/singlefind/${_id}`)
       .then((res) => {
         console.log(res.data);
         setMovieVideo(res.data);

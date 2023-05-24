@@ -14,7 +14,7 @@ const Home = ({ type }) => {
       try {
         let authToken = localStorage.getItem("token");
         const res = await axios.get(
-           `http://localhost:4000/api/list/getalllist${type ? "?type=" + type : ""}${
+           `http://localhost:5000/api/list/getalllist${type ? "?type=" + type : ""}${
             genre ? "&genre=" + genre : ""
           }`,
           {

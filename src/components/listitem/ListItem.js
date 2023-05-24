@@ -15,7 +15,7 @@ const ListItem = ({ index, item }) => {
     const getMovie = async () => {
       try {
         const res = await axios.get(
-          `http://localhost:4000/api/movie/singlefind/${item} `
+          `http://localhost:5000/api/movie/singlefind/${item} `
         );
         //console.log(res.data);
         setMovie(res.data);

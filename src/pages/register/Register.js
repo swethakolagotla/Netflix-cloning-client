@@ -27,7 +27,7 @@ const Register = () => {
     setUsername(usernameRef.current.value);
     try {
       const res = await axios.post(
-        "http://localhost:4000/api/auth/register",
+        "http://localhost:5000/api/auth/register",
         state
       );
       console.log(res);
